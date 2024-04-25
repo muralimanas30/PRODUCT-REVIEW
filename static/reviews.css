@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Exo+2:wght@600&family=Monoton&family=Protest+Guerrilla&family=Protest+Riot&display=swap');
+*,html{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    
+    outline: none;
+
+}
+
+body{
+    height: 100vh;
+    /* background-color: #000;     */
+}
+
+/* Add your CSS styles here */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.review {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}

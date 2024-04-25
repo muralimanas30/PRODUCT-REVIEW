@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Exo+2:wght@600&family=Monoton&family=Protest+Guerrilla&family=Protest+Riot&display=swap');
+*,html{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    
+    outline: none;
+
+}
+
+body{
+    height: 100vh;
+    /* background-color: #000;     */
+}
+
+
+
+.PR-main{
+    height: 100%;width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-direction: column;
+    background: #272727;
+
+
+    background-image: url("https://static.vecteezy.com/system/resources/previews/005/005/190/non_2x/minimal-black-background-with-texture-design-banner-pattern-background-concept-vector.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}    
+#PR-heading-text{
+    margin: 1rem 2rem;
+    
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    text-align: center;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    color: white;
+    font-weight: bold;
+}
+.PR-fetch-box{
+
+    
+    min-height: 300px;
+    height: fit-content;
+    text-align: center;
+    width: clamp(300px, 95vw, 800px);
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 0px 1rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
+    & p{
+        font-size: clamp(1rem, 3vw, 3rem);
+        font-size: 2.5rem;
+        font-family: "Exo 2", sans-serif;
+        color: white;
+        margin: 15px;
+    }
+}
+
+.mask-text{
+
+    background:radial-gradient(rgb(255, 0, 255),rgb(15, 15, 165));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    font-size: 3.254rem;
+    
+
+    
+}
+.anta-regular {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+
+.btn{
+    width: 150px;
+    padding: 4px 0px;
+    border-radius: 4px;
+    border:none;
+    background-image: linear-gradient();
+}
+.btn{
+
+    border-radius: 5px;
+    border: none;
+    padding: 5px 0px;
+    outline: none;
+    width: 150px;
+    color: white;
+    font-size: 1rem;
+    background-image: linear-gradient(to right, #e433af , #49d0f2, #a85ea2);
+    background-size: 380px 50px;
+    background-position: 0%;
+    transition: all 0.15s ease-in-out;
+    box-shadow: 0px 0px 0px 0px #fff;
+}
+.btn:hover{
+    scale: 1.02;
+    background-position: 100%;
+    box-shadow: 0px 1px 15px 1px #90b7d5;
+}
+
+.btn:active{
+    background-position: 0%;
+    scale: 0.8;
+}
+
+
+#PR-text-input{
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 1.05rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
+}
+#PR-text-input:hover{
+    box-shadow: 0px 1px 10px 1px #fff;
+
+}
+
+#PR-text-input::placeholder {
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    color: gray;
+
+}
+.ani {
+    display: inline;
+    height: 30px;
+    width: 30px;
+    /* padding: 1px 25px; */
+    /* margin: 10px 10px; */
+    border-top: 1px dotted blueviolet;
+    border-right: 2px dotted blueviolet;
+    border-bottom: 2.5px dotted violet;
+    transition: all 0.2s ease-in-out;
+    border-radius: 50%;
+    animation: rotate 1s ease-in-out infinite alternate-reverse forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(1deg) scale(1);
+    }
+    25% {
+        border-top: 1px dotted white;
+        border-right: 2px dotted white; 
+        border-bottom: 2.5px dotted white  ;
+
+        transform: scale(0.8) rotate(90deg);
+    }
+    75%{
+        transform: rotate(270deg) scale(0.8);
+        border-top: 1px dotted blueviolet;
+        border-right: 2px dotted rgb(195, 43, 226);
+        border-bottom: 2.5px dotted rgb(20, 113, 253);
+    }
+    100%{
+        transform: rotate(0deg) scale(0.1);
+        border-top: 1px dotted blueviolet;
+        border-right: 2px dotted blueviolet;
+        border-bottom: 2.5px dotted rgb(253, 20, 253);
+    }
+}

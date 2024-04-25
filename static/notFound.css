@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Exo+2:wght@600&family=Monoton&family=Protest+Guerrilla&family=Protest+Riot&display=swap');
+*,html{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    
+    outline: none;
+
+}
+
+body{
+    height: 100vh;
+    /* background-color: #000;     */
+}
+
+
+
+.PR-main{
+    height: 100%;width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-direction: column;
+    background: #272727;
+
+
+    background-image: url("https://static.vecteezy.com/system/resources/previews/005/005/190/non_2x/minimal-black-background-with-texture-design-banner-pattern-background-concept-vector.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}    
+#PR-heading-text{
+    margin: 1rem 2rem;
+    
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    text-align: center;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    color: white;
+    font-weight: bold;
+}
+.PR-fetch-box{
+    
+    text-align: center;
+    width: clamp(300px, 95vw, 800px);
+    background-color: #181818;
+    border-radius: 10px;
+    border: 1px solid white;
+
+   & p{
+        font-size: clamp(1rem, 3vw, 3rem);
+        font-size: 2.5rem;
+        font-family: "Exo 2", sans-serif;
+        color: white;
+        margin: 15px;
+    }
+}
+
+.mask-text{
+
+    background:radial-gradient(rgb(255, 0, 255),rgb(15, 15, 165));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    font-size: 3.254rem;
+    
+
+    
+}
