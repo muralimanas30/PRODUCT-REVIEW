@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Reviews - {{ product_name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='reviews.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Reviews - {{ product_name }}</h1>
+        <div id="reviews">
+            {% if reviews %}
+                {% for review in reviews %}
+                    <div class="review">
+                        <h2>{{ review.customer_name }}</h2>
+                        <p><strong>Rating:</strong> {{ review.rating }}</p>
+                        <p><strong>Mini Review:</strong> {{ review.mini_review }}</p>
+                        <p><strong>Date:</strong> {{ review.date }}</p>
+                        <p><strong>Review Body:</strong> {{ review.review_body }}</p>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No reviews available for {{ product_name }}</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

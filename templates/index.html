@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT REVIEW</title>
+    <!-- <link rel="stylesheet" href="PROJECT\static\style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="PR-main">
+        <header style="width: 100%;"> 
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+             
+                <p id="PR-heading-text">
+                    <span class="mask-text">
+                        REAL TIME</span>
+                        PRODUCT REVIEW INTERFACE
+                    </p>
+             
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">         
+        </header>
+        <div class="PR-fetch-box">
+            <p>
+                Fetch For a <span class="mask-text">product</span>
+            </p>
+            <form action="/search" method="post" style="display: flex; 
+            width:100%; justify-content:center;align-items:center;gap:1rem;
+            flex-wrap:wrap">
+                <input type="text" name="product-name" id="PR-text-input"
+                placeholder="What are looking for?..">
+                <button type="submit" id="PR-search-buuton" class="btn">
+                    Get Review 🔎
+                </button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
