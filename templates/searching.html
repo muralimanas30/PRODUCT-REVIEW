@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT REVIEW</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='searching.css') }}">
+</head>
+<body>
+    <div class="PR-main">
+        <header style="width: 100%;"> 
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            <p id="PR-heading-text">
+                <span class="mask-text">
+                    REAL TIME</span>
+                    PRODUCT REVIEW INTERFACE
+            </p>
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">         
+        </header>
+        <div class="PR-fetch-box">
+            <p>
+                Fetching for <span class="mask-text">{{ product_name }}</span> please wait <div class="ani"> </div>
+            </p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('/start_scraping', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({'product_name': '{{ product_name }}'})
+            })
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = '/reviews'; // Redirect to reviews.html
+                } else {
+                    console.error('Error:', response.statusText);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+</html>
