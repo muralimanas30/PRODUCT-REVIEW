@@ -1,3 +1,7 @@
+
+
+
+
 from bs4 import BeautifulSoup
 import pandas as pd #to export into excel sheets
 import requests
@@ -80,7 +84,7 @@ def get_soup(review_url,page_number=1):
     review_url = review_url.replace("/p/","/product-reviews/")+f"&page={page_number}"
 
 
-    user_name = "muralimanas30"
+    user_name = "22B81A0591"
     password = "IamMurali591_"
     payload = {
         "source":"universal",
